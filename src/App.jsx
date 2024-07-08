@@ -1,8 +1,17 @@
-import React from 'react'
+// src/App.jsx
+import React from 'react';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Overview from './pages/Overview';
 
 const App = () => {
   return (
-    <div className='text-[70px]'>App</div>
+  <Router>
+    <Routes>
+      <Route path='/' element={<Overview/>} />
+      
+    </Routes>
+  </Router>    
   )
 }
 
