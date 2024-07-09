@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Overview from './pages/Overview';
 import Calender from './pages/Calender';
-import Task from './pages/Task'
+import TaskPage from './pages/Task'
 import Note from './pages/Note'
 
 // context routing
@@ -23,7 +23,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Overview />} />
           <Route path='/calender' element={<Calender />} />
-          <Route path='/task' element={<Task />} />
+          <Route path='/task' element={<TaskPage />} />
           <Route path='/note' element={<Note />} />
 
           <Route path="/notelist" element={<NotesList />} />
