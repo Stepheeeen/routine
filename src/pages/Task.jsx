@@ -15,7 +15,7 @@ const TaskForm = ({ title = '', description = '', onSubmit }) => {
   return (
     <form onSubmit={handleSubmit} className="mt-4">
       <div>
-        <label className="block">Title</label>
+        <label className="block">Title </label>
         <input
           type="text"
           value={taskTitle}
