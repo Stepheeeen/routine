@@ -13,6 +13,7 @@ const NotesList = () => {
       <ul>
         {notes.map((note) => (
           <li key={note.id} className="mt-2">
+            
             <Link to={`/note/${note.id}`} className="text-blue-500">{note.title}</Link>
           </li>
         ))}

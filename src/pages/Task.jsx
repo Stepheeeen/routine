@@ -20,7 +20,7 @@ const TaskForm = ({ title = '', description = '', onSubmit }) => {
           type="text"
           value={taskTitle}
           onChange={(e) => setTaskTitle(e.target.value)}
-          className="border p-2 w-full"
+          className="border-none outline-none p-2 w-full"
           placeholder="Enter task title"
           required
         />
@@ -30,7 +30,7 @@ const TaskForm = ({ title = '', description = '', onSubmit }) => {
         <textarea
           value={taskDescription}
           onChange={(e) => setTaskDescription(e.target.value)}
-          className="border p-2 w-full"
+          className="border-none outline-none p-2 w-full"
           placeholder="Enter task description"
           required
         />
