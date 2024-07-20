@@ -3,7 +3,6 @@ import TextField from '@mui/material/TextField';
 import { styled } from '@mui/system';
 
 const CustomTextField = styled(TextField)({
-  
   '& label.Mui-focused': {
     color: '#028960',
   },
@@ -24,6 +23,7 @@ export const DefaultInput = ({ label, customStyling, id }) => {
         id={id}
         label={label}
         variant="outlined"
+        className='text-[18px]'
         fullWidth
       />
     </div>
