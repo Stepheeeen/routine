@@ -3,7 +3,7 @@ import { BottomNavbar, TopNavbar } from '../components/reusable/Navbar/Navbar'
 
 const PageContainer = ({children, navbarStyling, pageTitle, topbarStyling}) => {
   return (
-    <div>
+    <div className='h-[100vh]'>
       <TopNavbar pageTitle={pageTitle} topbarStyling={topbarStyling} />
         {children}
       <BottomNavbar navbarStyling={navbarStyling}  />
