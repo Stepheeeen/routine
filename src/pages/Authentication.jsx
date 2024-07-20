@@ -20,7 +20,7 @@ const Authentication = () => {
               <DefaultInput label={'Username'} customStyling='w-full' />
               <DefaultInput label={'Email'} customStyling='w-full my-[20px]' />
 
-              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg w-full mt-[40px]'}/>
+              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg w-full mt-[60px]'}/>
             </form>
         </div>
     </PageContainer>

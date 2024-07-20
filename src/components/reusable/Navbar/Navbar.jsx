@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const TopNavbar = ({topbarStyling, pageTitle}) => {
   return (
     <div className={`p-2 py-5 ${topbarStyling}`}>
-      <h1 className='text-[27px] font-[600]'>{pageTitle}</h1>
+      <h1 className='text-[20px] font-[600]'>{pageTitle}</h1>
     </div>
   )
 }
