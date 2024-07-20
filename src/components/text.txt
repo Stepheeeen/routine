@@ -58,3 +58,11 @@ export default function LongMenu() {
     </div>
   );
 }
+
+
+  '& label.Mui-focused': {
+    color: '#028960',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: '#028960',
+  },

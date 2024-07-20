@@ -1,14 +1,16 @@
 import React from 'react'
 
-const TopNavbar = () => {
+const TopNavbar = ({topbarStyling, pageTitle}) => {
   return (
-    <div>Navbar</div>
+    <div className={`p-2 ${topbarStyling}`}>
+      <h1 className='text-[27px] font-[600]'>{pageTitle}</h1>
+    </div>
   )
 }
 
-const BottomNavbar = () => {
+const BottomNavbar = ({navbarStyling}) => {
   return (
-    <div>Navbar</div>
+    <div className={`${navbarStyling}`}>Navbar</div>
   )
 }
 

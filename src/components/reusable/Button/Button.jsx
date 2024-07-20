@@ -1,7 +1,8 @@
 import React from 'react'
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
-export const Button = () => {
+export const Button = ({ButtonStyling, variant}) => {
   return (
-    <div>Button</div>
+    <Button colorScheme="customGreen" className={`${ButtonStyling}`} variant={variant}>{text}</Button>
   )
 }
