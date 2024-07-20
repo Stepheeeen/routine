@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TopNavbar = ({topbarStyling, pageTitle}) => {
   return (
@@ -10,7 +11,9 @@ const TopNavbar = ({topbarStyling, pageTitle}) => {
 
 const BottomNavbar = ({navbarStyling}) => {
   return (
-    <div className={`${navbarStyling}`}>Navbar</div>
+    <div className={`${navbarStyling}`}>
+      <Link to={'/authentication'}>Signup</Link>
+    </div>
   )
 }
 

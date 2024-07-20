@@ -1,8 +1,11 @@
 import React from 'react'
+import PageContainer from './Index'
 
 const Overview = () => {
   return (
-    <div className='text-[#000]'>Overview</div>
+    <PageContainer>
+      
+    </PageContainer>
   )
 }
 
