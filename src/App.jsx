@@ -15,6 +15,8 @@ import NotesList from './components/NotesList';
 import NoteDetail from './components/NoteDetail';
 import NoteForm from './components/NoteForm';
 import EditNote from './components/EditNote'; 
+import Authentication from './pages/Authentication';
+import Profile from './pages/Profile';
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
           <Route path='/calender' element={<Calender />} />
           <Route path='/task' element={<TaskPage />} />
           <Route path='/note' element={<Note />} />
+          <Route path="/authentication" element={<Authentication />} />
+          <Route path="/user" element={<Profile/>} />
 
           <Route path="/notelist" element={<NotesList />} />
           <Route path="/note/:id" element={<NoteDetail />} />
