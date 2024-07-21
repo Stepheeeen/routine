@@ -15,12 +15,12 @@ const Authentication = () => {
         <img src={AuthImg} alt="alt" className='' />
         </div>
 
-        <div className='w-full flex items-center justify-center mt-[55px] pb-2 relative'>
+        <div className='w-full flex items-center justify-center mt-[25px] pb-2 relative'>
             <form action="" className='w-[95%] '>
               <DefaultInput label={'Username'} customStyling='w-full' />
               <DefaultInput label={'Email'} customStyling='w-full my-[20px]' />
 
-              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg absolute bottom-0 w-full mt-[60px]'}/>
+              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg absolute bottom-0 w-full mt-[90px]'}/>
             </form>
         </div>
     </PageContainer>
