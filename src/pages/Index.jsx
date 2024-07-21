@@ -1,13 +1,15 @@
 import React from 'react'
 import { BottomNavbar, TopNavbar } from '../components/reusable/Navbar/Navbar'
+import { AddIcon } from '../components/reusable/Button/AddIcon'
 
-const PageContainer = ({children, navbarStyling, pageTitle, topbarStyling, className}) => {
+const PageContainer = ({children, navbarStyling, pageTitle, topbarStyling, className, path, addStyle}) => {
   return (
-    <div className={`h-[100vh]`}>
+    <div className={`h-[90vh]`}>
       <TopNavbar pageTitle={pageTitle} topbarStyling={topbarStyling} />
       <main className={className}>
         {children}
       </main>
+      <AddIcon path={path} addStyle={addStyle} />
       <BottomNavbar navbarStyling={navbarStyling}  />
     </div>
   )

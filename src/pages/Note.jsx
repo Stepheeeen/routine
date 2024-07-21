@@ -3,18 +3,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useNotes } from '../context/NotesContext';
 import PageContainer from './Index';
+import NotesImg from '../assets/images/NotesImage.png'
 
 const NotesHome = () => {
   const { notes, deleteNote } = useNotes();
 
   return (
-    <PageContainer>
+    <PageContainer
+    pageTitle={'Notes'}
+    path={'/new'}>
     <div className="p-4">
-      <h1 className="text-2xl font-bold">Notes Homepage</h1>
-      <Link to="/new" className="text-blue-500 mb-4 block">Create New Note</Link>
+      
       <ul className="space-y-4">
         {notes.length === 0 ? (
-          <p>No notes available. Create one to get started!</p>
+          <div className='h-[78vh] flex flex-col justify-center items-center'>
+            <img src={NotesImg} alt="notes" className='h-[200px] mt-[-70px] mb-[10px]' />
+              No Notes Here
+          </div>
         ) : (
           notes.map(note => (
             <li key={note.id} className="border p-4 rounded-lg shadow-sm">

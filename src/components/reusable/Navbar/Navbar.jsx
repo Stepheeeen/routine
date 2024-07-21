@@ -11,7 +11,7 @@ import NoteActive from '../../../assets/icons/noteIconActive.svg'
 
 const TopNavbar = ({ topbarStyling, pageTitle }) => {
   return (
-    <div className={`p-2 py-5 ${topbarStyling}`}>
+    <div className={`p-2 py-5 flex justify-center items-center ${topbarStyling}`}>
       <h1 className='text-[20px] font-[600]'>{pageTitle}</h1>
     </div>
   )
