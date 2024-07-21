@@ -10,7 +10,8 @@ const Authentication = () => {
     <PageContainer
     navbarStyling={'hidden'}
     pageTitle={'Create Account'}
-    topbarStyling={'flex justify-center items-center md:justify-start md:pl-[18%]'}
+    topbarStyling={'md:justify-start md:pl-[18%]'}
+    addStyle={'hidden'}
     className='md:flex md:justify-between md:items-center md:flex-row-reverse'>
         <div className='p-2 mt-[-15px] md:w-1/2 md:mt-[-85px]'>
         <img src={AuthImg} alt="alt" className='md:w-[85%]' />
@@ -21,7 +22,7 @@ const Authentication = () => {
               <DefaultInput label={'Username'} customStyling='w-full' />
               <DefaultInput label={'Email'} customStyling='w-full my-[20px]' />
 
-              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg absolute bottom-0 w-full mt-[80px] md:mt-[50px]'}/>
+              <DefaultButton text={'Create Account'} variant={'solid'} ButtonStyling={'bg-[#028960] text-[#fff] p-3 rounded-lg absolute bottom-0 w-full mt-[0px] md:mt-[50px]'}/>
             </form>
         </div>
     </PageContainer>
