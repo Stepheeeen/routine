@@ -4,7 +4,7 @@ import addIcon from '../../../assets/icons/addIcon.svg'
 
 const AddIcon = ({ path, addStyle }) => {
     return (
-        <Link to={path} className={`absolute right-0 bottom-[30px] ${addStyle}`}>
+        <Link to={path} className={`fixed right-0 bottom-[75px] ${addStyle}`}>
             <img src={addIcon} alt="addIcon" />
         </Link>
     )
