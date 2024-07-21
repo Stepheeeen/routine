@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useTasks, TaskProvider } from '../context/TaskContext';
+import PageContainer from './Index';
 
 // Task Form Component
 const TaskForm = ({ title = '', description = '', onSubmit }) => {
@@ -61,6 +62,7 @@ const TaskPage = () => {
   };
 
   return (
+    <PageContainer>
     <div className="p-4">
       <h1 className="text-2xl font-bold">Task Scheduler</h1>
       <button
@@ -107,6 +109,7 @@ const TaskPage = () => {
         )}
       </ul>
     </div>
+    </PageContainer>
   );
 };
 

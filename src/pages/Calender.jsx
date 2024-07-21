@@ -6,6 +6,7 @@ import 'react-calendar/dist/Calendar.css';
 import 'react-datepicker/dist/react-datepicker.css';
 import { v4 as uuidv4 } from 'uuid';
 import { useCalendar, CalendarProvider } from '../context/CalendarContext';
+import PageContainer from './Index';
 
 // Event Form Component
 const EventForm = ({ title = '', date = new Date(), onSubmit }) => {
@@ -78,7 +79,8 @@ const Calender = () => {
   };
 
   return (
-    <div className="p-4">
+    <PageContainer>
+      <div className="p-4">
       <h1 className="text-2xl font-bold">Calender Event Scheduler</h1>
       <Calendar
         onChange={handleDateChange}
@@ -129,6 +131,8 @@ const Calender = () => {
         )}
       </ul>
     </div>
+    </PageContainer>
+    
   );
 };
 

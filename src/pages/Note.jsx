@@ -2,11 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useNotes } from '../context/NotesContext';
+import PageContainer from './Index';
 
 const NotesHome = () => {
   const { notes, deleteNote } = useNotes();
 
   return (
+    <PageContainer>
     <div className="p-4">
       <h1 className="text-2xl font-bold">Notes Homepage</h1>
       <Link to="/new" className="text-blue-500 mb-4 block">Create New Note</Link>
@@ -33,6 +35,7 @@ const NotesHome = () => {
         )}
       </ul>
     </div>
+    </PageContainer>
   );
 };
 
