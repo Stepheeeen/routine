@@ -52,7 +52,6 @@ const NoteForm = () => {
 
       <form className="mt-4">
         <div>
-          {/* <label className="block">Title</label> */}
           <input
             type="text"
             value={title}
