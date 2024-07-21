@@ -52,22 +52,22 @@ const NoteForm = () => {
 
       <form className="mt-4">
         <div>
-          <label className="block">Title</label>
+          {/* <label className="block">Title</label> */}
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="border p-2 w-full"
+            className="p-2 w-full outline-none text-[17px] font-[600]"
             placeholder="Enter note title"
             required
           />
         </div>
         <div className="mt-4">
-          <label className="block">Content</label>
+          {/* <label className="block">Content</label> */}
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="border p-2 w-full"
+            className="p-2 w-full outline-none h-[67vh]"
             placeholder="Enter note content"
             required
           />

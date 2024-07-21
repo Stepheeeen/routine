@@ -21,7 +21,7 @@ const BottomNavbar = ({ navbarStyling }) => {
   const location = useLocation();
 
   return (
-    <div className={`fixed bottom-0 m-auto w-full p-6 shadow flex items-center justify-between z-10 ${navbarStyling}`}>
+    <div className={`fixed bg-white bottom-0 m-auto w-full p-6 shadow flex items-center justify-between z-10 ${navbarStyling}`}>
       <Link to='/'>
         <img src={location.pathname === '/' ? HomeActive : Home} alt="home" />
       </Link>
