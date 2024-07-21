@@ -1,7 +1,9 @@
 // src/components/NoteForm.jsx
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useNotes } from '../context/NotesContext';
+import Done from '../assets/icons/doneIcon.svg'
+import Back from '../assets/icons/returnIcon.svg'
 
 const NoteForm = () => {
   const { addNote, updateNote, notes } = useNotes();
@@ -35,9 +37,20 @@ const NoteForm = () => {
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold">{id ? 'Edit Note' : 'Create Note'}</h1>
-      <form onSubmit={handleSubmit} className="mt-4">
+    <div className="p-4 w-[100%]">
+    <div className={`p-2 py-5 flex justify-between items-center`}>
+      <Link to={'/note'}>
+        <img src={Back} alt={id ? 'Update Note' : 'Create Note'} />
+      </Link>
+      <h1 className='text-[20px] font-[600]'>
+        Notes
+      </h1>
+      <button onClick={handleSubmit} type="submit" className="">
+        <img src={Done} alt={id ? 'Update Note' : 'Create Note'} />
+      </button>
+    </div>
+
+      <form className="mt-4">
         <div>
           <label className="block">Title</label>
           <input
@@ -59,9 +72,7 @@ const NoteForm = () => {
             required
           />
         </div>
-        <button type="submit" className="mt-4 bg-blue-500 text-white p-2 rounded">
-          {id ? 'Update Note' : 'Create Note'}
-        </button>
+
       </form>
     </div>
   );

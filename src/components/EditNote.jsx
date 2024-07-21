@@ -27,7 +27,6 @@ const EditNote = () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold">Edit Note</h1>
       {note ? (
         <NoteForm
           title={note.title}
