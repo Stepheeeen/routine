@@ -62,7 +62,6 @@ const NoteForm = () => {
           />
         </div>
         <div className="mt-1">
-          {/* <label className="block">Content</label> */}
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}

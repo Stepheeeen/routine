@@ -27,7 +27,7 @@ const NotesHome = () => {
               <li key={note.id} className="border p-4 rounded-lg shadow-sm flex items-center">
                 <Link to={`/note/${note.id}`} className="w-[90%]">
                   <h2 className="text-xl font-semibold">{note.title}</h2>
-                  <p>{note.content.substring(0, 100)}...</p>
+                  <p>{note.content.substring(0, 20)}...</p>
                 </Link>
                 <div className="flex items-center justify-between flex-col">
                   <Link to={`/edit-note/${note.id}`}>
