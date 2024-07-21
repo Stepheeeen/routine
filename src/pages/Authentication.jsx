@@ -11,11 +11,11 @@ const Authentication = () => {
     navbarStyling={'hidden'}
     pageTitle={'Create Account'}
     topbarStyling={'flex justify-center items-center'}>
-        <div className='p-2 mt-[-25px]'>
+        <div className='p-2 mt-[-15px]'>
         <img src={AuthImg} alt="alt" className='' />
         </div>
 
-        <div className='w-full flex items-center justify-center mt-[25px] pb-3 relative'>
+        <div className='w-full flex items-center justify-center mt-[55px] pb-2 relative'>
             <form action="" className='w-[95%] '>
               <DefaultInput label={'Username'} customStyling='w-full' />
               <DefaultInput label={'Email'} customStyling='w-full my-[20px]' />
