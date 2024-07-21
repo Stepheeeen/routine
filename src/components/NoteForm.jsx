@@ -37,7 +37,7 @@ const NoteForm = () => {
   };
 
   return (
-    <div className="p-4 w-[100%]">
+    <div className="p-3 w-[100%]">
     <div className={`p-2 py-5 flex justify-between items-center`}>
       <Link to={'/note'}>
         <img src={Back} alt={id ? 'Update Note' : 'Create Note'} />
@@ -50,24 +50,24 @@ const NoteForm = () => {
       </button>
     </div>
 
-      <form className="mt-4">
+      <form className="mt-1">
         <div>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="p-2 w-full outline-none text-[17px] font-[600]"
-            placeholder="Enter note title"
+            className="p-2 w-full outline-none text-[18px] font-[600]"
+            placeholder="Title"
             required
           />
         </div>
-        <div className="mt-4">
+        <div className="mt-1">
           {/* <label className="block">Content</label> */}
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
             className="p-2 w-full outline-none h-[67vh]"
-            placeholder="Enter note content"
+            placeholder="Content"
             required
           />
         </div>

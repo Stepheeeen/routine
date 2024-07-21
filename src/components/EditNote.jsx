@@ -26,7 +26,7 @@ const EditNote = () => {
   };
 
   return (
-    <div className="p-4">
+    <div>
       {note ? (
         <NoteForm
           title={note.title}
@@ -34,7 +34,7 @@ const EditNote = () => {
           onSubmit={(title, content) => handleUpdate({ id: note.id, title, content })}
         />
       ) : (
-        <p>Loading...</p>
+        <p className='mt-[50%] ml-[50%]'>Loading...</p>
       )}
     </div>
   );

@@ -2,6 +2,9 @@
 import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useNotes } from '../context/NotesContext';
+import Back from '../assets/icons/returnIcon.svg'
+import EditIcon from '../assets/icons/editIcon.svg'
+import DeleteIcon from '../assets/icons/deleteIcon.svg'
 
 const NoteDetail = () => {
   const { id } = useParams();
@@ -21,13 +24,25 @@ const NoteDetail = () => {
 
   return (
     <div className="p-4">
+      <div className="flex justify-between items-center mt-2 mb-5">
+        <div>
+          <Link to="/note" className="">
+            <img src={Back} alt="" className='' />
+          </Link>
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <Link to={`/edit-note/${note.id}`} className="mr-3">
+            <img src={EditIcon} alt="" />
+          </Link>
+          <button onClick={handleDelete} className="">
+            <img src={DeleteIcon} alt="" />
+          </button>
+        </div>
+
+      </div>
       <h1 className="text-2xl font-bold">{note.title}</h1>
       <p>{note.content}</p>
-      <div className="mt-4">
-        <Link to={`/edit-note/${note.id}`} className="text-yellow-500">Edit Note</Link>
-        <button onClick={handleDelete} className="text-red-500 ml-4">Delete Note</button>
-        <Link to="/note" className="text-blue-500 ml-4">Back to Notes</Link>
-      </div>
     </div>
   );
 };
