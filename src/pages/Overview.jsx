@@ -3,7 +3,8 @@ import PageContainer from './Index'
 
 const Overview = () => {
   return (
-    <PageContainer>
+    <PageContainer
+    addStyle={'hidden'}>
       
     </PageContainer>
   )
